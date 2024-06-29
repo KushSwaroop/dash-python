@@ -1,0 +1,13 @@
+status,mental_condition,percentage
+migrant_to_USA,depression,5.3
+migrant_within_mexico,depression,6.1
+non-migrant,depression,5.5
+migrant_to_USA,anxiety,19.0
+migrant_within_mexico,anxiety,22.6
+non-migrant,anxiety,17.5
+migrant_to_USA,fatigue,4.9
+migrant_within_mexico,fatigue,6.3
+non-migrant,fatigue,5.1
+migrant_to_USA,pain,6.8
+migrant_within_mexico,fatigue,7.1
+non-migrant,fatigue,4.8
