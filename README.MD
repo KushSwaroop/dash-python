@@ -7,8 +7,8 @@ This project visualizes various statistics related to border deaths and mental h
 1. **Clone the repository:**
 
     ```sh
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/xmnlz/dash-python.git
+    cd dash-python
     ```
 
 2. **Install the required Python packages:**
