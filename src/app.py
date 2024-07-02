@@ -2,7 +2,7 @@ from dash import Dash, html, dash_table, dcc, Input, Output, State
 import pandas as pd
 import plotly.express as px
 
-# Load data
+# Load data )
 border_deaths_df = pd.read_csv("./data/border_deaths_by_discoverer.csv")
 death_by_age_df = pd.read_csv("./data/death_by_age.csv")
 deaths_by_gender_df = pd.read_csv("./data/deaths_by_gender.csv")
