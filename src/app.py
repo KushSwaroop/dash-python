@@ -9,6 +9,16 @@ deaths_by_gender_df = pd.read_csv("./data/deaths_by_gender.csv")
 deaths_nationality_df = pd.read_csv("./data/deaths_nationality.csv")
 death_type_df = pd.read_csv("./data/deathtype.csv")
 mental_health_df = pd.read_csv("./data/mental_health_conditions_research.csv")
+#ecuador_melted_df=pd.read_csv("./data/deaths_nationality_ecuador_melted.csv")
+
+''' linear reg model
+X_ecuador= df4_ecuador_melted["Year"]
+y_ecuador=df4_ecuador_melted["Ecuador"]
+Xtrain, Xtest, ytrain, ytest = train_test_split(X_ecuador,y_ecuador, test_size=0.2, random_state=1)
+model1=LinearRegression().fit(Xtrain, ytrain)
+model1_r2 = model1.score(Xtrain, ytrain)
+print(f"model1 R2 = {model1_r2}")
+'''
 
 # Create figures
 fig1 = px.line(border_deaths_df, x="discoverer", y=["2018", "2019", "2020", "2021", "2022"])
@@ -17,6 +27,7 @@ fig3 = px.line(deaths_by_gender_df, x="gender", y=["2018", "2019", "2020", "2021
 fig4 = px.line(deaths_nationality_df, x="nationality", y=['fy_2018', 'fy_2019', 'fy_2020', 'fy_2021', 'fy_2022'])
 fig5 = px.line(death_type_df, x="type of death", y=['fy 2018', 'fy 2019', 'fy 2020', 'fy 2021', 'fy 2022'])
 fig6 = px.scatter(mental_health_df, x="status", y="mental_condition", size="percentage", color="status")
+#plt.scatter(Xtrain, ytrain);
 
 app = Dash(__name__)
 
