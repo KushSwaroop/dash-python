@@ -12,6 +12,7 @@ mental_health_df = pd.read_csv("./data/mental_health_conditions_research.csv")
 #ecuador_melted_df=pd.read_csv("./data/deaths_nationality_ecuador_melted.csv")
 
 ''' linear reg model
+ecuador_melted_df.drop([0], inplace =True)
 X_ecuador= df4_ecuador_melted["Year"]
 y_ecuador=df4_ecuador_melted["Ecuador"]
 Xtrain, Xtest, ytrain, ytest = train_test_split(X_ecuador,y_ecuador, test_size=0.2, random_state=1)
