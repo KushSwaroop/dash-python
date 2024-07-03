@@ -119,4 +119,4 @@ def toggle_theme(n_clicks, theme_data):
         return "dark-theme", "px-4 py-2 m-4 bg-gray-200 text-black rounded", {"dark": True}
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=0000)
